@@ -1,3 +1,5 @@
+<center>
+
 # A project for profile (professional card)
 
 ## Here is a sample of
@@ -10,4 +12,5 @@
 
 
 
-### using: css & html
+### using: css & html @picture unsplash @september/2021
+</center>
