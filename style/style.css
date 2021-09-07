@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background: url(/imgs/bg.jpg) no-repeat center; /* importante */
+  background-size: cover; /* importante - aproveitamento da tela*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card {
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-header {
+  background: rgba(22, 20, 20, 0.568);
+  color: white;
+  padding: 60px 40px;
+}
+
+.pic {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, rgb(68, 64, 68), rgb(167, 53, 68));
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+}
+.pic img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right top;
+  }
+}
+
+.name {
+  color: rgb(17, 13, 13);
+  background-color: rgba(134, 71, 71, 0.452);
+  font-size:40px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 18px;
+  color: thistle;
+}
+
+.sm {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.sm a {
+  color: tomato;
+  width: 56px;
+  font-size: 22px;
+  transition: 0.3s linear;
+}
+.sm a:hover {
+  color: rgb(124, 93, 88);
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 50px;
+  background-color: rgba(134, 71, 71, 0.452);
+  color: white;
+  border: 2px solid red;
+  margin-top: 16px;
+  border-radius: 6px;
+  transition: 0.3s linear;
+}
+
+.contact-btn:hover {
+  background: rgba(209, 11, 11, 0.432);
+  color: rgb(243, 230, 230);
+  border: 2px solid white;
+  font-size: larger;
+}
+
+.card-footer {
+    background-color: rgba(209, 183, 183, 0.829);
+  color: black;
+  padding: 15px 10px;
+  font-size: 15px;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.item{
+flex: 1;
+text-transform: uppercase;
+font-size: 13px;
+}
+.item span{
+display:block;
+font-size: 30px;
+color: rgb(87, 7, 7);
+}
+
+.border {
+    width: 1px;
+    height: 30px;
+    background:rgb(243, 230, 230);
+}
